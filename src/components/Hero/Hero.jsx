@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section
       className="
-  relative pt-32 pb-24
+  relative pt-32 pb-28
   bg-gradient-to-b
   from-transparent via-cyan-50/40 to-transparent
   dark:via-cyan-900/10
@@ -33,16 +33,18 @@ export default function Hero() {
   </span>
 </h1> */}
 <h1 className="text-4xl font-bold">
-  <span className="block animate-fadeUp">Hi, I’m</span>
-  <span className="block text-neon-cyan">
-  <TypewriterName text="Saibal Chakraborty" />
-</span>
-
+  <span className="block">Hi, I’m</span>
+  <span className="block text-neon-cyan">Saibal Chakraborty</span>
 </h1>
 
 
-           <p className="mt-6 text-lg text-gray-500 animate-fadeUp" style={{ animationDelay: "1.6s" }}>
-
+            <p
+              className="
+  mt-6 max-w-md
+  text-lg leading-relaxed
+  text-gray-600 dark:text-gray-400
+"
+            >
               Full-Stack Developer building modern web apps.
             </p>
 
@@ -56,7 +58,7 @@ export default function Hero() {
       hover:shadow-neon hover:-translate-y-0.5
       transition-all duration-300
     "
-                >
+                href="#contact">
                   Contact Me
                 </button>
 
@@ -72,21 +74,6 @@ export default function Hero() {
                 >
                   View Projects
                 </button>
-                <a
-  href="/Saibal_Chakraborty_CV.pdf"
-  download
-  className="
-      px-7 py-3 rounded-md
-      border border-neon-cyan/70
-      text-neon-cyan
-      hover:bg-neon-cyan/10 hover:-translate-y-0.5
-      transition-all duration-300
-    "
->
-  Download CV
-</a>
-  
-
               </div>
 
               {/* Socials */}

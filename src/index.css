@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+:root {
+  --glow-color: 168, 85, 247; /* PURPLE */
+}
+
 @keyframes nameReveal {
   0% {
     transform: translateY(100%);

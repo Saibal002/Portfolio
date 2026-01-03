@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm"
 
 export default function Contact() {
   return (
-    <Section title="Contact">
+    <Section title="Contact" id="contact">
       <div className="grid gap-12 lg:grid-cols-2">
         
         {/* Left text */}
