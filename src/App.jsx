@@ -64,9 +64,14 @@ function App() {
     <div className="min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
       <ThemeToggle />
       <Hero />
+      
       <About />
+      <div className="h-px bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-700 to-transparent mb-10" />
+
       <Skills />
       <Projects />
+      <div className="h-px bg-gradient-to-r from-transparent via-purple-200 dark:via-purple-700 to-transparent mb-16" />
+
       <Contact />
     </div>
   )

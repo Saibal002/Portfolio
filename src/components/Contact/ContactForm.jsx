@@ -7,30 +7,22 @@ export default function ContactForm() {
     e.preventDefault()
     setStatus("loading")
 
-    // Collect form values
     const formData = new FormData(e.target)
-    const name = formData.get("name")
-    const email = formData.get("email")
-    const message = formData.get("message")
-
+    
     try {
+      // REPLACE THE URL BELOW WITH YOUR NEW GOOGLE SCRIPT URL
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbwKrqHZ35TgZtO996aD6WV38gaJPsBVoTpOgf-jGE5oHXwsqqXWpWOPpwE76Ay4nfg/exec",
+        "https://script.google.com/macros/s/AKfycbwQ9JiE_kC9ztq-Z-dcoXnN-dDIcYjuahuDWT90-oXZqqq8a-OTfC3cm5uHN44VLr5pYQ/exec", 
         {
           method: "POST",
-          body: new URLSearchParams({
-            name,
-            email,
-            message,
-          }),
+          // 'no-cors' is essential for Google Forms integration to prevent browser blocks
+          mode: "no-cors", 
+          body: new URLSearchParams(formData), // Automatically handles name, email, message
         }
       )
 
-      if (!response.ok) {
-        throw new Error("Request failed")
-      }
-
-      // Success
+      // With 'no-cors', we can't check response.ok or get JSON back. 
+      // We assume if no error was thrown, it worked.
       e.target.reset()
       setStatus("success")
 

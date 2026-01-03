@@ -11,6 +11,7 @@ export default function Section({ title, children, className = "" }) {
         )}
         {children}
       </Container>
+      
     </section>
   )
 }
