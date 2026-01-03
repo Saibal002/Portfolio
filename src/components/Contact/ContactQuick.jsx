@@ -49,6 +49,7 @@ export default function ContactQuick({ compact = false, className = "" }) {
         >
           <FaGithub />
         </a>
+
       </div>
     </div>
   )

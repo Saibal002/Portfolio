@@ -72,6 +72,21 @@ export default function Hero() {
                 >
                   View Projects
                 </button>
+                <a
+  href="/Saibal_Chakraborty_CV.pdf"
+  download
+  className="
+      px-7 py-3 rounded-md
+      border border-neon-cyan/70
+      text-neon-cyan
+      hover:bg-neon-cyan/10 hover:-translate-y-0.5
+      transition-all duration-300
+    "
+>
+  Download CV
+</a>
+  
+
               </div>
 
               {/* Socials */}
