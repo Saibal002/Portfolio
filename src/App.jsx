@@ -58,7 +58,7 @@ import About from "./components/About/About"
 import Skills from "./components/Skills/Skills"
 import Projects from "./components/Projects/Projects"
 import Contact from "./components/Contact/Contact"
-
+import Footer from "./components/Footer"
 function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
@@ -73,7 +73,9 @@ function App() {
       <div className="h-px bg-gradient-to-r from-transparent via-purple-200 dark:via-purple-700 to-transparent mb-16" />
 
       <Contact />
+      <Footer />
     </div>
+    
   )
 }
 
