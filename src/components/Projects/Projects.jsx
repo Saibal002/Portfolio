@@ -4,7 +4,8 @@ import { projectsData } from "./projectsData"
 
 export default function Projects() {
   return (
-    <Section title="Projects" id="projects">
+    <Section id="projects" title="Projects"  className=" /* APPLY THEME BACKGROUND GLOBALLY */
+        bg-site-light dark:bg-site-dark">
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {projectsData.map((project, index) => (
           <ProjectCard

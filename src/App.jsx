@@ -53,6 +53,8 @@
 
 // export default App;
 import ThemeToggle from "./components/ThemeToggle"
+import ThemeSwitcher from "./components/ThemeSwitcher" 
+import SectionDivider from "./components/layout/SectionDivider";
 import Hero from "./components/Hero/Hero"
 import About from "./components/About/About"
 import Skills from "./components/Skills/Skills"
@@ -61,22 +63,44 @@ import Contact from "./components/Contact/Contact"
 import Footer from "./components/Footer"
 function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
-      <ThemeToggle />
-      <Hero />
+    <div 
+      className="
+        min-h-screen 
+        text-gray-900 dark:text-gray-100
+        
+        /* APPLY THEME BACKGROUND GLOBALLY */
+        bg-site-light dark:bg-site-dark
+        
+        /* Smooth transition when switching themes */
+        transition-colors duration-300
+        overflow-x-hidden
+      "
+    >
+      <ThemeSwitcher />
       
+      <Hero />
+
+      <SectionDivider />
+
       <About />
-      <div className="h-px bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-700 to-transparent mb-10" />
+
+      <SectionDivider />
 
       <Skills />
-      <Projects />
-      <div className="h-px bg-gradient-to-r from-transparent via-purple-200 dark:via-purple-700 to-transparent mb-16" />
 
-      <Contact />
+      <SectionDivider />
+
+      <Projects />
+
+      <SectionDivider />
+
+     <Contact id="contact" />
+      
+      <SectionDivider />
+
       <Footer />
     </div>
-    
-  )
+  );
 }
 
 export default App

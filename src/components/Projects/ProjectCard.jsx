@@ -40,7 +40,7 @@ export default function ProjectCard({ project, index }) {
             className="w-full h-full object-cover"
           />
         ) : (
-          <div className="w-full h-full flex items-center justify-center text-gray-400">
+          <div className="w-full h-full flex items-center justify-center text-neon-cyan">
             No preview
           </div>
         )}

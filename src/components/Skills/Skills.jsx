@@ -7,7 +7,13 @@ export default function Skills() {
   return (
     <Section
       title="Technical Proficiency" // slightly more professional title
-      className="relative overflow-hidden bg-gray-50 dark:bg-gray-900 py-20"
+      className="relative overflow-hidden
+      /* LIGHT MODE: Subtle Gray */
+        bg-site-light
+        
+        /* DARK MODE: Fully Black Background */
+        dark:bg-site-dark
+        overflow-hidden"
     >
       {/* Decorative Background Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
