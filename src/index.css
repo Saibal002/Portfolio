@@ -1,4 +1,35 @@
 @tailwind base;
+@layer base {
+  :root {
+    /* Backgrounds */
+    --bg-main: 255 255 255;
+    --bg-card: 255 255 255 / 0.7;
+
+    /* Text */
+    --text-main: 17 24 39;
+    --text-muted: 107 114 128;
+
+    /* Accent */
+    --accent: 34 211 238;
+    --accent-soft: 34 211 238 / 0.35;
+
+    /* Borders */
+    --border-soft: 229 231 235;
+  }
+
+  .dark {
+    --bg-main: 17 24 39;
+    --bg-card: 17 24 39 / 0.6;
+
+    --text-main: 243 244 246;
+    --text-muted: 156 163 175;
+
+    --accent: 34 211 238;
+    --accent-soft: 34 211 238 / 0.6;
+
+    --border-soft: 55 65 81;
+  }
+}
 @tailwind components;
 @tailwind utilities;
 

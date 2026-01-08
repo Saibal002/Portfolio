@@ -37,6 +37,10 @@ export default {
           cyan: "#22d3ee",
           purple: "#a855f7",
         },
+        bg: {
+          main: "rgb(var(--bg-main))",
+          card: "rgb(var(--bg-card))",
+        },
       },
 
       boxShadow: {

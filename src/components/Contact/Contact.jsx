@@ -7,7 +7,7 @@ export default function Contact() {
       <div className="grid gap-12 lg:grid-cols-2">
         
         {/* Left text */}
-        <div className="text-gray-700 dark:text-gray-300">
+        <div className="text-gray-700 dark:-gray-300">
           <p className="text-lg mb-4">
             Have a project in mind or want to collaborate?
           </p>
