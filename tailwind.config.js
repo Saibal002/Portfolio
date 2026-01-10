@@ -47,6 +47,7 @@ export default {
         // FIXED REFERENCE HERE (references trainTravel defined above)
         trainTravel: "trainTravel 5s linear infinite",
         cursorBlink: "cursorBlink 1.2s steps(1) infinite",
+        
       },
       fontFamily: {
       sans: ["Inter", "system-ui", "sans-serif"],

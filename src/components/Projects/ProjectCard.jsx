@@ -18,11 +18,18 @@ export default function ProjectCard({ project, index }) {
     if (ref.current) observer.observe(ref.current)
   }, [])
 
+  // Helper to ensure links are absolute (e.g. add https:// if missing)
+  const getValidUrl = (url) => {
+    if (!url) return "#";
+    return url.startsWith("http") ? url : `https://${url}`;
+  }
+
   return (
     <div
       ref={ref}
       style={{ transitionDelay: `${index * 120}ms` }}
       className={`
+        flex flex-col h-full
         rounded-2xl overflow-hidden
         bg-white/70 dark:bg-gray-900/60
         backdrop-blur border border-white/20 dark:border-white/10
@@ -32,7 +39,7 @@ export default function ProjectCard({ project, index }) {
       `}
     >
       {/* Image */}
-      <div className="h-48 bg-gray-200 dark:bg-gray-800 overflow-hidden">
+      <div className="h-48 bg-gray-200 dark:bg-gray-800 overflow-hidden shrink-0">
         {project.image ? (
           <img
             src={project.image}
@@ -47,12 +54,12 @@ export default function ProjectCard({ project, index }) {
       </div>
 
       {/* Content */}
-      <div className="p-6">
-        <h3 className="text-lg font-semibold mb-2">
+      <div className="p-6 flex flex-col flex-grow">
+        <h3 className="text-lg font-semibold mb-2 text-neon-cyan">
           {project.title}
         </h3>
 
-        <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">
           {project.description}
         </p>
 
@@ -62,7 +69,7 @@ export default function ProjectCard({ project, index }) {
             <span
               key={tech}
               className="px-2 py-1 text-xs rounded-full
-              bg-gray-100 dark:bg-gray-800
+              bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300
               border border-gray-200 dark:border-gray-700"
             >
               {tech}
@@ -70,22 +77,26 @@ export default function ProjectCard({ project, index }) {
           ))}
         </div>
 
-        {/* Links */}
-        <div className="flex gap-4 text-sm">
-          {project.live && (
+        {/* Links Section - UPDATED CONDITION */}
+        <div className="flex gap-4 text-sm font-medium mt-auto">
+          {/* Only show if live exists AND it is not just a hashtag placeholder */}
+          {project.live && project.live !== "#" && (
             <a
-              href={project.live}
+              href={getValidUrl(project.live)}
               target="_blank"
-              className="text-neon-cyan hover:underline"
+              rel="noopener noreferrer"
+              className="text-neon-cyan hover:text-cyan-400 hover:underline transition-colors"
             >
-              Live
+              Live Demo
             </a>
           )}
+          
           {project.github && (
             <a
-              href={project.github}
+              href={getValidUrl(project.github)}
               target="_blank"
-              className="text-neon-cyan hover:underline"
+              rel="noopener noreferrer"
+              className="text-neon-cyan hover:text-cyan-400 hover:underline transition-colors"
             >
               GitHub
             </a>

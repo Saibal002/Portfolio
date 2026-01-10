@@ -118,4 +118,27 @@ body {
     */
     @apply text-base md:text-lg leading-relaxed text-gray-600 dark:text-gray-300;
   }
+  /* index.css */
+@keyframes binaryFloat {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-160vh); /* 🔥 FULL SECTION + EXTRA */
+    opacity: 0;
+  }
+}
+
+.binary-float {
+  animation-name: binaryFloat;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+
 }
