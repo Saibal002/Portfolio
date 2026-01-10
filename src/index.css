@@ -138,6 +138,25 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+@keyframes binaryColumnFloat {
+  0% {
+    transform: translateY(120%);
+  }
+  100% {
+    transform: translateY(-180%);
+  }
+}
+
+.binary-column {
+  position: absolute;
+  bottom: -40%;
+  display: flex;
+  flex-direction: column;
+  animation-name: binaryColumnFloat;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  white-space: nowrap;
+}
 
 
 
