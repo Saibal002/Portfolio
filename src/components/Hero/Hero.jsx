@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import profile from "../../assets/prof_2.png";
 import Container from "../layout/Container";
 import TypewriterName from "../TypewriterName";
+import GridBackground from "../GridBackground";
 
 import ContactQuick from "../Contact/ContactQuick";
 
@@ -39,6 +40,7 @@ export default function Hero() {
         overflow-hidden 
       "
     >
+      <GridBackground />
       <Container className="h-full">
         <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-center h-full">
           {/* Text Area */}

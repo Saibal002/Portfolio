@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <Section title="Contact" id="contact">
       <div className="grid gap-12 lg:grid-cols-2">
-        
+    
         {/* Left text */}
         <div className="text-gray-700 dark:-gray-300">
           <p className="text-lg mb-4">
