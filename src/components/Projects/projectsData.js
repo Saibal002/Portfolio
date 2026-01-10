@@ -4,7 +4,7 @@ export const projectsData = [
     description:
       "A modern developer portfolio built with React, Tailwind, and dark/light as main themes. Showcasing my skills and projects.",
     tech: ["React", "Tailwind", "Vite", "Google Forms",],
-    image: "/public/project_portfolio.png",
+    image: "/src/assets/project_portfolio.png",
     live: "saibal02.netlify.app",
     github: "https://github.com/Saibal002/Portfolio",
   },
@@ -13,7 +13,7 @@ export const projectsData = [
     description:
       "A Simple URL shortening service built with Node.js and Express.",
     tech: ["Node.js", "Express", "EJS", "MongoDB"],
-    image: "/project-URLShortner.png",
+    image: "/src/assets/project-URLShortner.png",
     live: "#",
     github: "https://github.com/Saibal002/URL-Shortner-NodeJs",
   },
@@ -22,7 +22,7 @@ export const projectsData = [
     description:
       "Detection using YOLOv7 & Integrated OCR (Image Preprocessing pipeline with OpenCV, character recognition using CNN)",
     tech: ["AI/ML", "Python", "OpenCv", "YOLOv7", "TensorFlow"],
-    image: "/public/image.png",
+    image: "/src/assets/image.png",
     live: "https://huggingface.co/spaces/Saibal002/VLPDR",
     github: "https://github.com/Saibal002/Vehicle-License-Plate-Detection-and-Recognition-System",
   },
