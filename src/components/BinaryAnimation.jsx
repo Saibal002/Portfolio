@@ -68,7 +68,7 @@ export default function BinaryAnimation({ columns = 32 }) {
           {stream.digits.map((digit, i) => (
             <div
               key={i}
-              className={i === 0 ? "opacity-100" : "opacity-60"}
+              className={i === 0 ? "opacity-100" : "opacity-90"}
             >
               {digit}
             </div>
