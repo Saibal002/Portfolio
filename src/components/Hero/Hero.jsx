@@ -66,39 +66,63 @@ export default function Hero() {
             </p>
 
             <div className="mt-10 space-y-6">
-              <div className="flex gap-4 flex-wrap">
-                {/* Primary */}
-              <a
-  href="#contact"
+             <div className="flex gap-4 flex-wrap">
+
+  {/* Contact */}
+  <a
+    href="#contact"
+    className="
+      px-8 py-4 rounded-lg
+      bg-neon-cyan text-black font-bold
+      shadow-neon
+      hover:shadow-neon-strong
+      hover:-translate-y-1
+      transition-all duration-300
+    "
+  >
+    Contact Me
+  </a>
+
+  {/* Projects */}
+  <a
+    href="#projects"
+    className="
+      px-8 py-4 rounded-lg
+      border-2 border-neon-cyan/70
+      text-neon-cyan font-medium
+      hover:bg-neon-cyan/10
+      hover:-translate-y-1
+      transition-all duration-300
+    "
+  >
+    View Projects
+  </a>
+
+  {/* Download CV */}
+  <a
+  href="/Saibal_Chakraborty_Resume.pdf"
+  download
   className="
-    px-8 py-4 rounded-lg
-    bg-neon-cyan text-black font-bold
-    
-    /* USE THE NEW DYNAMIC SHADOW HERE */
-    shadow-neon 
-    hover:shadow-neon-strong
-    
+    px-8 py-4
+    rounded-lg
+    border-2
+    border-neon-cyan
+    text-neon-cyan
+    font-semibold
+    flex items-center
+    gap-2
+    hover:bg-neon-cyan
+    hover:text-black
+    transition-all
+    duration-300
     hover:-translate-y-1
-    transition-all duration-300
+    hover:shadow-neon
   "
 >
-                  Contact Me
-                </a>
+  Download CV
+</a>
 
-                {/* Secondary */}
-                <button
-                  className="
-                    px-8 py-4 rounded-lg
-                    border-2 border-neon-cyan/70
-                    text-neon-cyan font-medium
-                    hover:bg-neon-cyan/10 hover:-translate-y-1
-                    transition-all duration-300
-                  "
-                  
-                >
-                 <a href="#projects">View Projects</a> 
-                </button>
-              </div>
+</div>
 
               {/* Socials */}
               <div className="flex items-center gap-4 pt-2">
