@@ -57,6 +57,7 @@ import ThemeSwitcher from "./components/ThemeSwitcher"
 import SectionDivider from "./components/layout/SectionDivider";
 import Hero from "./components/Hero/Hero"
 import About from "./components/About/About"
+import Education from "./components/Education/Education";
 import Skills from "./components/Skills/Skills"
 import Projects from "./components/Projects/Projects"
 import Contact from "./components/Contact/Contact"
@@ -83,6 +84,9 @@ function App() {
       <SectionDivider />
 
       <About />
+
+      <SectionDivider />
+       <Education />
 
       <SectionDivider />
 
