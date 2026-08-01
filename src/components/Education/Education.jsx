@@ -163,7 +163,7 @@ export default function Education() {
           font-semibold
         "
       >
-        Current
+        Recent
       </span>
     )}
 
