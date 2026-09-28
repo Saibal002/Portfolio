@@ -26,4 +26,22 @@ export const projectsData = [
     live: "https://huggingface.co/spaces/Saibal002/VLPDR",
     github: "https://github.com/Saibal002/Vehicle-License-Plate-Detection-and-Recognition-System",
   },
+  {
+    title: "TaskDrobe — Real-Time Project & Workspace Management Platform",
+    description:
+      "Enterprise RBAC workspace (Admin, Manager, Employee) featuring real-time Socket.IO direct chat & notifications, conflict-free team meeting scheduling, threaded discussions, and Redis-cached analytics.",
+    tech: [
+      "Node.js",
+      "Express 5",
+      "PostgreSQL",
+      "Redis",
+      "Socket.IO",
+      "EJS",
+      "Passport OAuth",
+      "Bootstrap 5"
+    ],
+    image: "/src/assets/taskdrobe.png",
+    live: "https://taskdrobe.onrender.com",
+    github: "https://github.com/Saibal002/Taskdrobe.git",
+  },
 ]
