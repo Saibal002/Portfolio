@@ -14,3 +14,61 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+```
+├── 📁 public
+│   ├── 📕 Saibal_Chakraborty_Resume.pdf
+│   └── 🖼️ vite.svg
+├── 📁 src
+│   ├── 📁 assets
+│   │   ├── 🖼️ image.png
+│   │   ├── 🖼️ prof_2.png
+│   │   ├── 🖼️ project-URLShortner.png
+│   │   ├── 🖼️ project_portfolio.png
+│   │   ├── 🖼️ react.svg
+│   │   └── 🖼️ taskdrobe.png
+│   ├── 📁 components
+│   │   ├── 📁 About
+│   │   │   └── 📄 About.jsx
+│   │   ├── 📁 Contact
+│   │   │   ├── 📄 Contact.jsx
+│   │   │   ├── 📄 ContactForm.jsx
+│   │   │   └── 📄 ContactQuick.jsx
+│   │   ├── 📁 Education
+│   │   │   └── 📄 Education.jsx
+│   │   ├── 📁 Hero
+│   │   │   └── 📄 Hero.jsx
+│   │   ├── 📁 Projects
+│   │   │   ├── 📄 ProjectCard.jsx
+│   │   │   ├── 📄 Projects.jsx
+│   │   │   └── 📄 projectsData.js
+│   │   ├── 📁 Skills
+│   │   │   ├── 📄 SkillCard.jsx
+│   │   │   ├── 📄 Skills.jsx
+│   │   │   └── 📄 skillsData.js
+│   │   ├── 📁 layout
+│   │   │   ├── 📄 Container.jsx
+│   │   │   ├── 📄 Section.jsx
+│   │   │   └── 📄 SectionDivider.jsx
+│   │   ├── 📄 BinaryAnimation.jsx
+│   │   ├── 📄 Footer.jsx
+│   │   ├── 📄 GridBackground.jsx
+│   │   ├── 📄 ThemeSwitcher.jsx
+│   │   ├── 📄 ThemeToggle.jsx
+│   │   └── 📄 TypewriterName.jsx
+│   ├── 🎨 App.css
+│   ├── 📄 App.jsx
+│   ├── 🎨 index.css
+│   └── 📄 main.jsx
+├── ⚙️ .gitignore
+├── 📝 README.md
+├── 📄 eslint.config.js
+├── 🌐 index.html
+├── ⚙️ package-lock.json
+├── ⚙️ package.json
+├── 📄 postcss.config.js
+├── 📄 tailwind.config.js
+└── 📄 vite.config.js
+```
+
+---

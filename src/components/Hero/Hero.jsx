@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import profile from "../../assets/prof_2.png";
+import profile from "/assets/prof_2.png";
 import Container from "../layout/Container";
 import TypewriterName from "../TypewriterName";
 import GridBackground from "../GridBackground";
